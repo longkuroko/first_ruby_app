@@ -33,6 +33,15 @@
   
     <%= form.text_field :facebook ,class:"form-control" , placeholder:"facebook"%>
   </div>
+
+   <div class="field form-group">
+  
+    <%= form.number_field :user_id ,
+    id: :fiend_user_id, 
+    
+    class:"form-control" , value: current_user.id , type: :hidden %>
+  </div>
+ 
   <div class="actions form-group">
     <%= form.submit  %>
   </div>
